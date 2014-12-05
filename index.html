@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Jairo Ushiña, desarrollador web profesional con tecnologías y tendencias modernas, HTML5, CSS3, jQuery, PHP, Node.js, Socket.io, Mongo, etc." />
+        <meta name="author" content="Jairo Ushiña" />
+        <!-- Title -->
+        <title>Jairo Ushiña | Desarrollador Web</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <!-- Other CSS -->
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link href="css/animate.css" rel="stylesheet" type="text/css">
+        <link href="css/simpletextrotator.css" rel="stylesheet" type="text/css" />
+        <link href="css/theme-loading-bar.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Revalia%7COswald%7COpen+Sans+Condensed:300%7CRoboto' rel='stylesheet' type='text/css' />
+        <!-- Custom CSS -->
+        <link href="css/theme.css" rel="stylesheet" type="text/css" />
+        <link href="css/bookblock.css" rel="stylesheet" type="text/css" />
+        <!--Loader CSS  -->
+        <link id="theme-color" rel="stylesheet" type="text/css" href="css/css-loader.css" />
+        <!-- Default Colour CSS -->
+        <link id="theme-color" rel="stylesheet" type="text/css" href="css/theme-colors/kimberly.css" />
+        <!-- PreLoader -->
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/pace.js" type="text/javascript"></script>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!--[if IE]>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Hides the complete page until window loads -->
+        <div class="cover"></div>
+        <!-- container -->
+        <div class="container">
+            <header>
+                <!-- Main company header -->
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-top">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <!-- Top navigation buttons, visible only in extra small mode -->
+                            <a class="visible-xs bb-nav-prev navbar-brand navbar-brand-pagination" href="#"><i class="fa fa-angle-left"></i></a>
+                            <a class="visible-xs bb-nav-next navbar-brand navbar-brand-pagination" href="#"><i class="fa fa-angle-right"></i></a>
+                            <!-- /Top navigation buttons -->
+                        </div>
+                        <div id="nav-top" class="collapse navbar-collapse pageScrollerNav standardNav dark">
+                            <ul class="nav navbar-nav navbar-right" id="menu">
+                                <li><a href="#"  data-page="1">Inicio</a></li>
+                                <li><a href="#" data-page="2">Jairo</a></li>
+                                <li><a href="#" data-page="3">Estudios</a></li>
+                                <li><a href="#" data-page="4">Experiencia</a></li>
+                                <li><a href="#" data-page="5">Habilidades</a></li>
+                                <li><a href="#" data-page="6">Trabajo</a></li>
+                                <li><a href="#" data-page="7">Contacto</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Book style flip wrapper -->
+            <div class="bb-custom-wrapper">
+                <div id="bb-bookblock" class="bb-bookblock">
+                    <!-- bb-item represents a page in the resume.
+                        add or remove bb-item divs to add or remove pages.
+                        -->
+                    <!-- First page, your photo and title -->
+                    <div class="bb-item" id="page-0">
+                        <div id="bb-first-page" class="bb-custom-side">
+                            <div class="row" id="first-page">
+                                <div class="col-sm-12 text-center">
+                                    <div class="dp-box">
+                                        <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="images/jairo_ushina.png" alt="Jairo Ushiña foto" /> Jairo Ushiña</h1>
+                                        <div class="visible-xs visible-sm">
+                                            <img class="dp" id="dp" src="images/jairo_ushina.png" alt="Display Picture" />
+                                            <h1>Jairo Ushiña</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 col-xs-offset-2 text-center">
+                                    <h2>
+                                        DESARROLLADOR WEB
+                                    </h2>
+                                    <p class="social-buttons">
+                                        <a class="btn btn-circle" href="https://www.facebook.com/jago86" target="_blank"><i class="fa fa-facebook"></i></a>
+                                        <a class="btn btn-circle" href="http://google.com/+JairoUshi%C3%B1a" target="_blank"><i class="fa fa-google"></i></a>
+                                        <a class="btn btn-circle" href="https://twitter.com/rjairo" target="_blank"><i class="fa fa-twitter"></i></a>
+                                        <a class="btn btn-circle" href="mailto:jago86@gmail.com"><i class="fa fa-envelope"></i></a>
+                                        <a class="btn btn-circle" href="skype:jairou86?call"><i class="fa fa-skype"></i></a>
+                                        <a class="btn btn-circle" href="#" onclick="alert('Proximamente este link abrirá mi blog personal.'); return false;"><i class="fa fa-arrow-right"></i></a>
+                                    </p>
+                                    <p id="navigation-help">
+                                        Para navegar utiliza las teclas <i class="fa fa-arrow-left"></i> <i class="fa fa-arrow-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /First page -->
+                    <!-- About -->
+                    <div class="bb-item" id="page-1">
+                        <div class="bb-custom-side">
+                            <div class="bb-custom-container">
+                                <h1 class="text-center"><span class="page-heading">Jairo</span></h1>
+                                <div class="row content-block text-justify animateFadeInRight">
+                                    <div class="col-sm-2 col-sm-offset-2 text-center">
+                                        <img src="images/man.png" alt="man icon"/>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>Bienvenidos! Soy Jairo, nací en la ciudad de Ibarra y actualmente vivo en Durán, provincia del Guayas. En este espacio podrás conocer un poco más de mi y de mi trabajo, si te interesa puedes echar un vistazo.  
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row content-block text-justify animateFadeInLeft">
+                                    <div class="col-sm-2 col-sm-offset-2 col-sm-push-6 text-center">
+                                        <img src="images/joypad.png" alt="joypad icon"/>
+                                    </div>
+                                    <div class="col-sm-6 col-sm-pull-2">
+                                        <p>
+                                            Desde niño tuve inclinación hacia los computadores, video juegos y tecnología. De hecho, me gustan muchos lo video juegos, creo que todo diseñador, programador, desarrollador, etc., debería tener en su historial video juegos que haya, valga la redundancia, jugado y terminado. Después de todo, los video juegos nos enseñaron cuando niños sobre, tecnología, que es un error de programación, que son variables, que es un servidor (para aquellos que viven en esta epoca de juegos online) e incluso a manejar consola y comandos del sistema operativo para aquellos que jugamos Prince of Persia en un computador con procesador 486 y con DOS como sistema operativo. Lastima ya no ser niño y no tener tanto tiempo para dedicarle a los video juegos.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row content-block content-block-last text-justify animateFadeInRight">
+                                    <div class="col-sm-2 col-sm-offset-2 text-center">
+                                        <img src="images/code.png" alt="wine icon"/>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>
+                                            Soy un programador neto. Variables, arrays, estructuras de programación, condiciones, y más fueron cosas que desde el colegio me llamaron la atención y el aprenderlas de mis maestros me marco y definió lo que soy hoy en día. 
+                                        </p>
+                                        <p>Mi fuerte y en lo que me he especializo es el desarrollo del backend mediante herramientas OpenSource, otra filosofía con la que estoy de acuerdo...ya que a mi criterio, nadie debe monopolizar o ser dueño totalitario del conocimiento, más bien todos debemos compartir lo que sabemos para así formar comunidades de desarrollo más fuertes.</p>
+                                        <p>Parte de mi tiempo libre lo dedico a conocer más sobre tendencias  web, tanto front-end como back-end. En lo gráfico me inclino por lo minimalista y he llegado a comprobar que cuando de diseño se trata, un buen diseño puede comunicarte mucho teniendo muy poco; de hecho, muchas de las cosas más "simples" de la vida se basan en este principio. En mi criterio, un buen diseño no es mas elementos tiene, sino, aquel al que no se le puede quitar ninguno. Un diseño al que no le puedes quitar nada es un diseño que tiene lo estrictamente necesario y lo que usuario va a usar. Si bien, no diría que todos mis trabajos han seguido este patrón, porque al final de cuentas quien decide lo que necesitas es el cliente.
+                                        </p>
+                                        <p>Sin más palabrería, ¡Bienvenidos!<br><br></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /About -->
+                    <!-- Education -->
+                    <div class="bb-item" id="page-2">
+                        <div class="bb-custom-side">
+                            <div class="bb-custom-container">
+                                <h1 class="text-center"><span class="page-heading">Educación</span></h1>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="blockquote-box blockquote-primary clearfix animateBounceInLeft">
+                                            <div class="square pull-left">
+                                                <i class="fa fa-calendar"></i> 1998 - 2004
+                                            </div>
+                                            <h2>Mariano Suárez Veintimilla</h2>
+                                            <p class="text-justify">
+                                                Realicé mis estudios secundarios en el Colegio Nacional Técnico <strong>Mariano Suárez Veitimilla</strong> . El 30 de julio de 2004 me gradué el título de Bachiller en Comercio y Administración Especialización Informática.
+                                            </p>
+                                        </div>
+                                        <div class="blockquote-box blockquote-danger clearfix animateBounceInLeft">
+                                            <div class="square pull-left">
+                                                <i class="fa fa-calendar"></i> 2004 - 2008
+                                            </div>
+                                            <h2>ITSI</h2>
+                                            <p class="text-justify">
+                                                El 17 de marzo de 2008 obtuve el título de Tecnólogo en Sistemas en el <strong>Instituto Tecnológico Superior Ibarra</strong>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="blockquote-box blockquote-warning clearfix animateBounceInRight">
+                                            <div class="square pull-left">
+                                                <i class="fa fa-calendar"></i> 2009 - 2012
+                                            </div>
+                                            <h2>UNIANDES</h2>
+                                            <p class="text-justify">
+                                                En 2012 obtuve el título de Ingeniero en Sistemas e Informática. Los estudios para este título los realicé en  en la <strong><a href="http://www.uniandes.edu.ec/" target="_blank">Universidad Regional Autónoma de los Andes</a></strong> (UNIANDES).
+                                            </p>
+                                        </div>
+                                        <div class="blockquote-box blockquote-success clearfix animateBounceInRight">
+                                            <div class="square pull-left">
+                                                <i class="fa fa-calendar"></i> 2014
+                                            </div>
+                                            <h2>Mejorando.la</h2>
+                                            <p class="text-justify">
+                                                En agosto del 2014 aprobé el Curso Profesional de PHP en <a href="https://mejorando.la/" target="_blank"><strong>Mejorando.la</strong></a>. Certificación de aprobación online: <a href="https://cursos.mejorando.la/usuarios/jago86" target="_blank">Click aquí</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Education -->
+                    <!-- Experience -->
+                    <div class="bb-item" id="page-3">
+                        <div class="bb-custom-side" id="experience">
+                            <div class="bb-custom-container">
+                                <h1 class="text-center"><span class="page-heading">Experiencia</span></h1>
+                                <div class="row">
+                                    <div class="col-sm-6 animateFadeInDown">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading"><img src="images/logo_pfe.png" height="40" width="40"> Porfinempleo</div>
+                                            <div class="panel-body">
+                                                <a href="http://www.porfinempleo.com" target="_blank" >Porfinempleo</a> es un portal que se dedica a publicar anuncios de trabajo en línea de empresas de todo el país (Ecuador).
+                                            </div>
+                                            <div class="panel-footer">Analista IT, marzo 2014 hasta noviembre 2014</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 animateFadeInUp">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading"><img src="images/cuponagil-logo.png" height="40" width="40"> Cuponagil</div>
+                                            <div class="panel-body">
+                                                <a href="http://www.cuponagil.com" target="_blank">Cuponagil</a> fue un portal dedicado a ofrecer cupones de descuento para negocios y tiendas de distinta índole,principalmete en la ciudad de Quito.
+                                            </div>
+                                            <div class="panel-footer">Trabajé como Programador Web Senior, desde 2012 hasta 2013</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 animateFadeInUp">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading"><img src="images/qualyhost.jpg" height="40" width="40"> Qualyhost</div>
+                                            <div class="panel-body">
+                                                <a href="http://www.qualyhost.com/" target="_blank">Qualyhost</a>, empresa proveedora de servicios de hosting y desarrollo web.
+                                            </div>
+                                            <div class="panel-footer">Pasantías en el 2007. Departamento de Desarrollo y Programación Web desde 2007 hasta 2009; desde 2008 como jefe de este departamento.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 animateFadeInDown">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading"><i class="fa fa-2x fa fa-paper-plane-o black"></i> Freelance</div>
+                                            <div class="panel-body">
+                                                Permanentemente hago trabajos en modalidad Freelance como: sitios web sencillos, portales, módulos para sitios ya desarrollados, asesoría, etc.
+                                            </div>
+                                            <div class="panel-footer">Freelance en varios proyectos, desde 2009</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Experience -->
+                    <!-- Skills -->
+                    <div class="bb-item" id="page-4">
+                        <div class="bb-custom-side">
+                            <div class="bb-custom-container">
+                                <h1 class="text-center"><span class="page-heading">Habilidades</span></h1>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active" role="progressbar" data-transitiongoal="80">
+                                                <span class="sr-only">80% Complete (success)</span>
+                                            </div>
+                                            <span class="progress-type">PHP</span>
+                                            <span class="progress-completed">80%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" data-transitiongoal="65"></div>
+                                            <span class="progress-type">HTML / HTML5</span>
+                                            <span class="progress-completed">65%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" data-transitiongoal="40"></div>
+                                            <span class="progress-type">CSS3</span>
+                                            <span class="progress-completed">40%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" data-transitiongoal="25"></div>
+                                            <span class="progress-type">Responsive Design</span>
+                                            <span class="progress-completed">25%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" data-transitiongoal="45"></div>
+                                            <span class="progress-type">Javascript</span>
+                                            <span class="progress-completed">45%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped active" role="progressbar" data-transitiongoal="45"></div>
+                                            <span class="progress-type">jQuery</span>
+                                            <span class="progress-completed">45%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" data-transitiongoal="75"></div>
+                                            <span class="progress-type">AJAX</span>
+                                            <span class="progress-completed">75%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" data-transitiongoal="70"></div>
+                                            <span class="progress-type">MySql</span>
+                                            <span class="progress-completed">70%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" data-transitiongoal="20"></div>
+                                            <span class="progress-type">Node.js & Web Sockets</span>
+                                            <span class="progress-completed">20%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" data-transitiongoal="20"></div>
+                                            <span class="progress-type">Redis</span>
+                                            <span class="progress-completed">20%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar  progress-bar-striped active" role="progressbar" data-transitiongoal="30"></div>
+                                            <span class="progress-type">Mongo DB</span>
+                                            <span class="progress-completed">30%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-sm-offset-2 animateFadeInUp">
+                                        <div class="well">
+                                            <h3>Desarrollo Web</h3>
+                                            <p>
+                                                Como desarrollador web he procurado aprender sobre tecnologías novedosas pero a la vez potentes y sacar lo mejor de cada una. A la hora de desarrollar trato de, según las necesidades del proyecto, integrar estas tecnologías de manera que se dé solución a problemas y se cumpla con los objetivos. Si bien no soy un gurú en HTML5 / CSS3, tengo "debilidad" por los entornos gráficos minimalistas y a la vez con buen UI / UX que se pueden lograr con estas tecnologías.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 animateFadeInUp">
+                                        <div class="well">
+                                            <h3>Backend</h3>
+                                            <p>
+                                                Como desarrollador principalmente enfocado al Backend, trato de estar aprendiendo constantemente nuevas cosas. Tengo habilidad principalmente para PHP, pero he encontrado muy interesante y efectivo combinarlo con tecnologías como Node.js, Socket.io y Redis. Dentro del mismo PHP, el uso del lenguaje y de buenas prácticas de programación es algo en lo que procuro siempre estar actualizado.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Skills -->
+                    <!-- Portfolio -->
+                    <div class="bb-item" id="page-5">
+                        <div class="bb-custom-side" id="portfolio">
+                            <div class="bb-custom-container">
+                                <h1 class="text-center"><span class="page-heading">Trabajo</span></h1>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 text-center animateFlipInX">
+                                        <div class="portfolio-item">
+                                            <p><img src="images/briefcase.png" alt="Porfinempleo.com"/></p>
+                                            <h4><a href="http://www.porfinempleo.com" target="_blank">Porfinempleo.com</a></h4>
+                                            <p>Desarrollo de varias secciones y módulos: sistema de administración para clientes y candidatos. Notificaciones en tiempo real con Node.js, etc.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 text-center animateFlipInY">
+                                        <div class="portfolio-item">
+                                            <p><img src="images/cupon.png" alt="cupón"/></p>
+                                            <h4><a href="http://www.cuponagil.com" target="_blank">Cuponagil.com</a></h4>
+                                            <p>Desarrollo de un portal web dedicado a ofrecer descarga de cupones de descuento aplicables en varias ciudades de Ecuador. Desarrollado utilizando PHP, HTML, CSS, JAVASCRIPT, AJAX. </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 text-center animateFlipInX">
+                                        <div class="portfolio-item">
+                                            <p><img src="images/horse.png" alt="caballo"/></p>
+                                            <h4><a href="http://www.accae.net/" target="_blank">ACCAE</a></h4>
+                                            <p>Construcción módulos para presentar los ejemplares y el árbol genealógico de los ejemplares registrados en la ACCAE. <a href="http://www.accae.net/accae/?page_id=1335" target="_blank">Lista completa</a>, <a href="http://www.accae.net/accae/?page_id=1331" target="_blank">padrillos</a>, <a href="http://www.accae.net/accae/?page_id=1329" target="_blank">yeguas</a>, <a href="http://www.accae.net/accae/?page_id=1327" target="_blank" >potros y potras</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 text-center animateFlipInY">
+                                        <div class="portfolio-item">
+                                            <p><img src="images/mangueras.png" alt="magueras"/></p>
+                                            <h4><a href="http://chiribogayjara.com/site/" target="_blank" >Chiriboga & Jara</a></h4>
+                                            <p>Portal web desarrollado con la finalidad de dar a conocer información de la empresa y el catálogo de productos. Desarrollado usando PHP, HTML, CSS, MYSQL.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 text-center">
+                                        <div class="portfolio-item animateFlipInY">
+                                            <p><img src="images/grupo.png" alt="grupo personas"/></p>
+                                            <h4><a href="http://www.cedet.ec/" target="_blank">CEDET</a></h4>
+                                            <p>Portal web para el Comite Ecuatoriano de Desarrollo Económico y Territorial. Uno de mis primeros trabajos como freelance (sitio no disponible actualmente) </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Portfolio -->
+                    <!-- Contact -->
+                    <div class="bb-item" id="page-6">
+                        <div class="bb-custom-side">
+                            <div class="bb-custom-container">
+                                <h1 class="text-center"><span class="page-heading">Contáctame</span></h1>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <form id="contact-form" class="form-horizontal" onsubmit="sendContactEmail(); return false;">
+                                            <fieldset>
+                                                <!-- Name input-->
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label" for="name">Nombre</label>
+                                                    <div class="col-md-9">
+                                                        <input id="name" name="name" type="text" placeholder="Tu nombre" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <!-- Email input-->
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label" for="email">Tu email</label>
+                                                    <div class="col-md-9">
+                                                        <input id="email" name="email" type="text" placeholder="Tu correo electrónico" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <!-- Message body -->
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label" for="message">Tu mensaje</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" id="message" name="message" placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                                <!-- Form actions -->
+                                                <div class="form-group">
+                                                    <div class="col-md-12 text-right">
+                                                        <input id="send-contact" type="submit" class="btn btn-success btn-lg" value="Enviar">
+                                                    </div>
+                                                </div>
+                                                <div id="ajax-state-contact" style="display:none;">
+                                                    <div class="bubblingG">
+                                                        <span id="bubblingG_1">
+                                                        </span>
+                                                        <span id="bubblingG_2">
+                                                        </span>
+                                                        <span id="bubblingG_3">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div id="contact-map"></div>
+                                        <address class="pull-right">
+                                            <strong>Durán, Guayas, Ecuador</strong><br>
+                                            <abbr title="Phone">Telf:</abbr> (593) 993523071
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Contact -->
+                </div>
+                <!-- Bottom navigation buttons, hidden in extra small mode -->
+                <nav class="hidden-xs">
+                    <a href="#" class="bb-nav-prev"><i class="fa fa-angle-left"></i></a>
+                    <a href="#" class="bb-nav-next"><i class="fa fa-angle-right"></i></a>
+                </nav>
+                <!-- /Bottom navigation buttons -->
+            </div>
+        </div>
+        <!-- /container -->
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Other JavaScript -->
+        <script src="js/theme.js" type="text/javascript"></script>
+        <script src="js/jquery.bookblock.js" type="text/javascript"></script>
+        <script src="js/bootstrap-progressbar.min.js" type="text/javascript"></script>
+        <script src="js/jquery.tabSlideOut.v1.3.js" type="text/javascript"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript" ></script>
+        <script src="js/gmaps.js" type="text/javascript"></script>
+        <script>
+            Page.init();
+               (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+               })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+               ga('create', 'UA-54392055-1', 'auto');
+               ga('send', 'pageview');
+
+                function sendContactEmail()
+                {
+
+                    $("#ajax-state-contact").show();
+                    var params = $("#contact-form").serialize();
+
+                    $.post( "contact.php", params,  function(data) {
+                        // alert( "success" );
+                        alert(data);
+                        $("#ajax-state-contact").hide();
+                    })
+                    .done(function() {
+                        // alert( "second success" );
+                    })
+                    .fail(function() {
+                        alert( "error" );
+                    })
+                    .always(function() {
+                        // alert( "finished" );
+                    });
+                }
+             
+        </script>
+        <!-- Theme change plugin, make sure to remove before deploying into production -->
+        <!-- <div class="slide-out-div">
+            <a class="handle" href="#"></a>
+            <h3>Change Color</h3>
+            <ul id="color-switcher" class="list-inline">
+                <li><a href="#" data-rel="css/theme-colors/orange.css"><img src="images/orange-theme.png" alt="Orange Theme Color" /></a></li>
+                <li><a href="#" data-rel="css/theme-colors/green.css"><img src="images/green-theme.png" alt="Green Theme Color" /></a></li>
+                <li><a href="#" data-rel="css/theme-colors/blue.css"><img src="images/blue-theme.png" alt="Blue Theme Color" /></a></li>
+                <li><a href="#" data-rel="css/theme-colors/red.css"><img src="images/red-theme.png" alt="Red Theme Color" /></a></li>
+                <li><a href="#" data-rel="css/theme-colors/purple.css"><img src="images/purple-theme.png" alt="Purple Theme Color" /></a></li>
+                <li><a href="#" data-rel="css/theme-colors/dark.css"><img src="images/dark-theme.png" alt="Dark Theme Color" /></a></li>
+                <li><a href="#" data-rel="css/theme-colors/glade.css"><img src="images/glade-theme.png" alt="Glade Theme Color" /></a></li>
+                <li><a href="#" data-rel="css/theme-colors/kimberly.css"><img src="images/kimberly-theme.png" alt="Kimberly Theme Color" /></a></li>
+            </ul>
+        </div> -->
+    </body>
+</html>

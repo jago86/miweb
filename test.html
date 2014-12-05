@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang ="es">
+    <head>
+        <script src="js/jquery.min.js" ></script>
+    </head>
+    <body>
+        <a href="#" onclick="getData(); return false;" >get data</a>
+        <div id='div-datos'></div>
+    </body>
+    <script>
+    function getData () {
+        $.ajax({
+            url: "test.php",
+            type: "post",
+            data: {contrasena: "123"},
+            dataType: "json"
+        })
+        .done(
+            function (data) {
+                $("#div-datos").text(JSON.stringify(data));
+            });
+    }
+    </script>
+</html>
