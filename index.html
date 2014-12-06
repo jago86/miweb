@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Jairo Ushiña, desarrollador web profesional con tecnologías y tendencias modernas, HTML5, CSS3, jQuery, PHP, Node.js, Socket.io, Mongo, etc." />
+        <meta name="description" content="Jairo Ushiña, desarrollador web profesional, uso de tecnologías y tendencias modernas, HTML5, CSS3, jQuery, PHP, Node.js, Socket.io, Mongo, etc." />
         <meta name="author" content="Jairo Ushiña" />
         <!-- Title -->
         <title>Jairo Ushiña | Desarrollador Web</title>
@@ -22,6 +22,8 @@
         <link id="theme-color" rel="stylesheet" type="text/css" href="css/css-loader.css" />
         <!-- Default Colour CSS -->
         <link id="theme-color" rel="stylesheet" type="text/css" href="css/theme-colors/kimberly.css" />
+        <!-- CUSTOM STYLES -->
+        <link id="theme-color" rel="stylesheet" type="text/css" href="css/custom-css.css" />
         <!-- PreLoader -->
         <script src="js/modernizr.custom.js"></script>
         <script src="js/pace.js" type="text/javascript"></script>
@@ -64,7 +66,7 @@
                                 <li><a href="#" data-page="4">Experiencia</a></li>
                                 <li><a href="#" data-page="5">Habilidades</a></li>
                                 <li><a href="#" data-page="6">Trabajo</a></li>
-                                <li><a href="#" data-page="7">Contacto</a></li>
+                                <li><a id="contact-page" href="#" data-page="7">Contacto</a></li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
@@ -86,7 +88,7 @@
                                     <div class="dp-box">
                                         <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="images/jairo_ushina.png" alt="Jairo Ushiña foto" /> Jairo Ushiña</h1>
                                         <div class="visible-xs visible-sm">
-                                            <img class="dp" id="dp" src="images/jairo_ushina.png" alt="Display Picture" />
+                                            <img class="dp" id="dp" src="images/jairo_ushina.png" alt="Jairo Ushiña foto" />
                                             <h1>Jairo Ushiña</h1>
                                         </div>
                                     </div>
@@ -99,7 +101,7 @@
                                         <a class="btn btn-circle" href="https://www.facebook.com/jago86" target="_blank"><i class="fa fa-facebook"></i></a>
                                         <a class="btn btn-circle" href="http://google.com/+JairoUshi%C3%B1a" target="_blank"><i class="fa fa-google"></i></a>
                                         <a class="btn btn-circle" href="https://twitter.com/rjairo" target="_blank"><i class="fa fa-twitter"></i></a>
-                                        <a class="btn btn-circle" href="mailto:jago86@gmail.com"><i class="fa fa-envelope"></i></a>
+                                        <a class="btn btn-circle" href="#" data-page="7" onclick="$('#contact-page').trigger('click'); return false;" ><i class="fa fa-envelope"></i></a>
                                         <a class="btn btn-circle" href="skype:jairou86?call"><i class="fa fa-skype"></i></a>
                                         <a class="btn btn-circle" href="#" onclick="alert('Proximamente este link abrirá mi blog personal.'); return false;"><i class="fa fa-arrow-right"></i></a>
                                     </p>
@@ -212,7 +214,7 @@
                                 <div class="row">
                                     <div class="col-sm-6 animateFadeInDown">
                                         <div class="panel panel-default">
-                                            <div class="panel-heading"><img src="images/logo_pfe.png" height="40" width="40"> Porfinempleo</div>
+                                            <div class="panel-heading"><img src="images/logo_pfe.png" height="40" width="40" alt="logo de Porfinempleo.com"> Porfinempleo</div>
                                             <div class="panel-body">
                                                 <a href="http://www.porfinempleo.com" target="_blank" >Porfinempleo</a> es un portal que se dedica a publicar anuncios de trabajo en línea de empresas de todo el país (Ecuador).
                                             </div>
@@ -221,7 +223,7 @@
                                     </div>
                                     <div class="col-sm-6 animateFadeInUp">
                                         <div class="panel panel-default">
-                                            <div class="panel-heading"><img src="images/cuponagil-logo.png" height="40" width="40"> Cuponagil</div>
+                                            <div class="panel-heading"><img src="images/cuponagil-logo.png" height="40" width="40" alt="Logo de cuponagil"> Cuponagil</div>
                                             <div class="panel-body">
                                                 <a href="http://www.cuponagil.com" target="_blank">Cuponagil</a> fue un portal dedicado a ofrecer cupones de descuento para negocios y tiendas de distinta índole,principalmete en la ciudad de Quito.
                                             </div>
@@ -232,7 +234,7 @@
                                 <div class="row">
                                     <div class="col-sm-6 animateFadeInUp">
                                         <div class="panel panel-default">
-                                            <div class="panel-heading"><img src="images/qualyhost.jpg" height="40" width="40"> Qualyhost</div>
+                                            <div class="panel-heading"><img src="images/qualyhost.jpg" height="40" width="40" alt="Logo de Qualyhost"> Qualyhost</div>
                                             <div class="panel-body">
                                                 <a href="http://www.qualyhost.com/" target="_blank">Qualyhost</a>, empresa proveedora de servicios de hosting y desarrollo web.
                                             </div>
@@ -349,7 +351,7 @@
                                 <div class="row">
                                     <div class="col-sm-6 col-md-4 text-center animateFlipInX">
                                         <div class="portfolio-item">
-                                            <p><img src="images/briefcase.png" alt="Porfinempleo.com"/></p>
+                                            <p><img src="images/briefcase.png" alt="Porfinempleo.com"/ alt="maletín"></p>
                                             <h4><a href="http://www.porfinempleo.com" target="_blank">Porfinempleo.com</a></h4>
                                             <p>Desarrollo de varias secciones y módulos: sistema de administración para clientes y candidatos. Notificaciones en tiempo real con Node.js, etc.</p>
                                         </div>
@@ -423,7 +425,7 @@
                                                         <input id="send-contact" type="submit" class="btn btn-success btn-lg" value="Enviar">
                                                     </div>
                                                 </div>
-                                                <div id="ajax-state-contact" style="display:none;">
+                                                <div id="ajax-state-contact">
                                                     <div class="bubblingG">
                                                         <span id="bubblingG_1">
                                                         </span>
